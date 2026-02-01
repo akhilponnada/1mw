@@ -38,8 +38,8 @@ const Navbar: React.FC = () => {
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-            ? 'bg-slate-900/95 backdrop-blur-md border-b border-slate-800'
-            : 'bg-transparent'
+          ? 'bg-slate-900/95 backdrop-blur-md border-b border-slate-800'
+          : 'bg-transparent'
           }`}
       >
         <div className="section-container">
@@ -74,9 +74,12 @@ const Navbar: React.FC = () => {
               <Button
                 size="sm"
                 className="hidden sm:flex bg-amber-500 hover:bg-amber-600 text-slate-900 font-medium"
+                asChild
               >
-                <Phone className="w-4 h-4 mr-2" />
-                Contact
+                <a href="tel:+919667660773">
+                  <Phone className="w-4 h-4 mr-2" />
+                  Contact
+                </a>
               </Button>
 
               {/* Mobile Menu Button */}
@@ -113,9 +116,12 @@ const Navbar: React.FC = () => {
                 ))}
                 <Button
                   className="mt-4 bg-amber-500 hover:bg-amber-600 text-slate-900 font-medium"
+                  asChild
                 >
-                  <Phone className="w-4 h-4 mr-2" />
-                  Schedule Call
+                  <a href="tel:+919667660773">
+                    <Phone className="w-4 h-4 mr-2" />
+                    Schedule Call
+                  </a>
                 </Button>
               </div>
             </div>
