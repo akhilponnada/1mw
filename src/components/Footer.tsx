@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
             <img
               src={uniteSolarLogo}
               alt="Unite Solar"
-              className="h-12 rounded-lg mb-4"
+              className="h-12 w-auto mb-4"
             />
             <p className="text-slate-400 mb-6 max-w-md">
               A global renewable energy developer delivering premium solar infrastructure
