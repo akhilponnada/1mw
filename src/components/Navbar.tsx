@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { PROJECT_CONFIG } from '@/lib/projectConfig';
+import uniteSolarLogo from '@/assets/logo2.svg';
 
 const navLinks = [
   { label: 'Location', href: '#location' },
@@ -47,9 +48,9 @@ const Navbar: React.FC = () => {
             {/* Logo */}
             <a href="#" className="flex items-center gap-3">
               <img
-                src="/src/assets/unite-solar-logo.jpeg"
+                src={uniteSolarLogo}
                 alt="Unite Solar"
-                className="h-10 md:h-12 rounded-lg"
+                className="h-10 md:h-12"
               />
               <span className="hidden sm:inline-flex items-center text-xs bg-amber-500/10 text-amber-400 px-2 py-1 rounded-full">
                 {PROJECT_CONFIG.totalMW} MW

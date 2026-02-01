@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Linkedin, Twitter, Youtube, User } from 'lucide-react';
-import uniteSolarLogo from '@/assets/unite-solar-logo.jpeg';
+import uniteSolarLogo from '@/assets/logo2.svg';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
